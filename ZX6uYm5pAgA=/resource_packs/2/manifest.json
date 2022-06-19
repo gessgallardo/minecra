@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "v2.0.0 | Pack By §6FoxyNoTail§r | Check the Readme.txt for details | @foxynotail | Visit www.foxynotail.com for more packs and add-ons | © 2022, FoxyNoTail",
+        "name": "Foxy's Markers v2.0.0",
+        "uuid": "294db752-2896-4896-8fcc-fb65619697a5",
+        "version": [2, 0, 0],
+		"min_engine_version": [1, 18, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "97d84e54-1936-4840-8809-54afb5d1f65f",
+            "version": [2, 0, 0]
+        }
+    ]
+}

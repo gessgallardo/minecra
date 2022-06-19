@@ -1,0 +1,30 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "Follow §b@noahcdn§r on Twitter!
+
+§bnoahcdn's Connected Glass§r is a texture pack created by §enoahcdn§r. 
+
+Most players on the §aJava Edition §rof Minecraft seek §aconnected texture §rresource packs to make their windows and such look better. Thanks to §5noahcdn§r, you can now do the same in §aBedrock Edition§r! 
+
+§bnoahcdn's Connected Glass§r removes the border on the edges of glass to make it seem like the blocks are actually connected when placed side-by-side.",
+        "name": "§bnoahcdn's Connected Textures",
+        "uuid": "e5040e7b-8ba3-4014-b025-104867d552c1",
+        "version": [1, 1, 0],
+        "min_engine_version": [1, 2, 6]
+    },
+    "modules": [
+        {
+            "description": "Follow §b@noahcdn§r on Twitter!
+
+§bnoahcdn's Connected Glass§r is a texture pack created by §enoahcdn§r. 
+
+Most players on the §aJava Edition §rof Minecraft seek §aconnected texture §rresource packs to make their windows and such look better. Thanks to §5noahcdn§r, you can now do the same in §aBedrock Edition§r! 
+
+§bnoahcdn's Connected Glass§r removes the border on the edges of glass to make it seem like the blocks are actually connected when placed side-by-side.",
+            "type": "resources",
+            "uuid": "2b15a258-3fc9-4085-801f-7f6da23e460d",
+            "version": [1, 1, 0]
+        }
+    ]
+}

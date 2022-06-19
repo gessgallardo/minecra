@@ -1,0 +1,845 @@
+{
+  "namespace": "brewing_stand",
+
+  "brewing_panel_top_half": {
+    "type": "panel",
+    "size": ["100%", "50% - 12px"],
+    "offset": [0, 7],
+    "anchor_to": "top_middle",
+    "anchor_from": "top_middle",
+    "controls": [
+      { "brewing_label@brewing_label": {} },
+      { "brewing_stand_pictogram@brewing_stand_pictogram": {} },
+      { "brewing_modifiers_panel@brewing_modifiers_panel": {} },
+      { "brewing_ingredients_panel@brewing_ingredients_panel": {} }
+    ]
+  },
+
+  "display_slots": {
+    "type": "image",
+    "layer": 5,
+    "texture": "textures/ui/cell_image_lock",
+    "size": [18, 18]
+  },
+
+  "brewing_modifiers_panel": {
+    "type": "panel",
+    "size": [62, 100],
+    "layer": 4,
+    "offset": [-121, 7.67],
+    "controls": [
+      {
+        "bg@mob_effect.effect_background": {}
+      },
+      { "display_slots_modifiers_grid@display_slots_modifiers_grid": {} }
+    ]
+  },
+
+  "display_slots_modifiers_grid": {
+    "type": "grid",
+    "size": ["100%", "100%"],
+    "offset": [0, 3],
+    "grid_dimensions": [2, 4],
+    "controls": [
+      {
+        "display_item_slot_glowstone_offset": {
+          "type": "panel",
+          "grid_position": [0, 0],
+          "controls": [
+            {
+              "display_item_slot_glowstone@display_slots": {}
+            },
+            {
+              "glowstone": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/glowstone_dust",
+                "size": [16, 16],
+                "offset": [0, 0],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "right_arrow": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/right_arrow",
+                "size": [9, 6],
+                "offset": [16, 1],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_ii_offset": {
+          "type": "panel",
+          "grid_position": [1, 0],
+          "controls": [
+            {
+              "display_item_slot_ii@display_slots": {}
+            },
+            {
+              "ii": {
+                "type": "image",
+                "layer": 10,
+                "size": [8, 8],
+                "offset": [0, 0],
+                "texture": "textures/ui/brewing_guide/ii",
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_redstone_offset": {
+          "type": "panel",
+          "grid_position": [0, 1],
+          "controls": [
+            {
+              "display_item_slot_redstone@display_slots": {
+                "offset": [0, -4]
+              }
+            },
+            {
+              "redstone": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/redstone_dust",
+                "size": [16, 16],
+                "offset": [0, -4],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "right_arrow": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/right_arrow",
+                "size": [9, 6],
+                "offset": [16, -3],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_clock_offset": {
+          "type": "panel",
+          "grid_position": [1, 1],
+          "controls": [
+            {
+              "display_item_slot_clock@display_slots": {
+                "offset": [0, -4]
+              }
+            },
+            {
+              "clock": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/clock_item",
+                "size": [16, 16],
+                "offset": [-1, -4],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "plus": {
+                "type": "image",
+                "layer": 11,
+                "texture": "textures/ui/brewing_guide/plus",
+                "size": [8, 8],
+                "offset": [5, 0],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_gunpowder_offset": {
+          "type": "panel",
+          "grid_position": [0, 2],
+          "controls": [
+            {
+              "display_item_slot_gunpowder@display_slots": {
+                "offset": [0, -8]
+              }
+            },
+            {
+              "gunpowder": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/gunpowder",
+                "size": [16, 16],
+                "offset": [0, -8],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "right_arrow": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/right_arrow",
+                "size": [9, 6],
+                "offset": [16, -7],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_splash_offset": {
+          "type": "panel",
+          "grid_position": [1, 2],
+          "controls": [
+            {
+              "display_item_slot_splash@display_slots": {
+                "offset": [0, -8]
+              }
+            },
+            {
+              "splash": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/potion_bottle_splash",
+                "size": [16, 16],
+                "offset": [0, -8],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "down_arrow": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/down_arrow",
+                "size": [9, 6],
+                "offset": [1, 6],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_lingering_offset": {
+          "type": "panel",
+          "grid_position": [0, 3],
+          "controls": [
+            {
+              "display_item_slot_lingering@display_slots": {
+                "offset": [0, -6]
+              }
+            },
+            {
+              "lingering": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/potion_bottle_lingering",
+                "size": [16, 16],
+                "offset": [0, -6],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "left_arrow": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/left_arrow",
+                "size": [9, 6],
+                "offset": [16, -5],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_dragons_breath_offset": {
+          "type": "panel",
+          "grid_position": [1, 3],
+          "controls": [
+            {
+              "display_item_slot_dragons_breath@display_slots": {
+                "offset": [0, -6]
+              }
+            },
+            {
+              "dragons_breath": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/dragons_breath",
+                "size": [16, 16],
+                "offset": [0, -6],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "brewing_ingredients_panel": {
+    "type": "panel",
+    "size": [110, 142],
+    "offset": [145, 28.67],
+    "controls": [
+      {
+        "bg@mob_effect.effect_background": {}
+      },
+      {
+        "display_slots_ingredients_grid_left@display_slots_ingredients_grid_left": {}
+      },
+      {
+        "middle_strip@beacon.image_atlas": {
+          "offset": [-9, 3],
+          "layer": 1,
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "texture": "textures/ui/middle_strip",
+          "size": [2, "100%-6px"]
+        }
+      },
+      {
+        "display_slots_ingredients_grid_right@display_slots_ingredients_grid_right": {}
+      }
+    ]
+  },
+
+  "display_slots_ingredients_grid_left": {
+    "type": "grid",
+    "size": [36, 128],
+    "offset": [-31, -24],
+    "layer": 4,
+    "grid_dimensions": [2, 2],
+    "controls": [
+      {
+        "display_item_slot_wart_offset": {
+          "type": "panel",
+          "grid_position": [0, 0],
+          "controls": [
+            {
+              "display_item_slot_wart@display_slots": {}
+            },
+            {
+              "nether_wart": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/nether_wart",
+                "size": [16, 16],
+                "offset": [0, 0],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_effects_offset": {
+          "type": "panel",
+          "grid_position": [1, 0],
+          "controls": [
+            {
+              "display_item_slot_effects@display_slots": {}
+            },
+            {
+              "effects": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/effects",
+                "size": [16, 16],
+                "offset": [0, 0],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_modifier_offset": {
+          "type": "panel",
+          "grid_position": [0, 1],
+          "controls": [
+            {
+              "display_item_slot_modifier@display_slots": {
+                "offset": [0, 2],
+                "size": [18, 108]
+              }
+            },
+            {
+              "blaze_powder": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/blaze_powder",
+                "size": [16, 16],
+                "offset": [0, -43],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "magma_cream": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/magma_cream",
+                "size": [16, 16],
+                "offset": [0, -25],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "ghast_tear": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/ghast_tear",
+                "size": [16, 16],
+                "offset": [0, -7],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "fish_pufferfish_raw": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/fish_pufferfish_raw",
+                "size": [16, 16],
+                "offset": [0, 11],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "phantom_membrane": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/phantom_membrane",
+                "size": [16, 16],
+                "offset": [0, 29],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "turtle_helmet": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/turtle_helmet",
+                "size": [16, 16],
+                "offset": [0, 47],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_potion_offset": {
+          "type": "panel",
+          "grid_position": [1, 1],
+          "controls": [
+            {
+              "display_item_slot_potion@display_slots": {
+                "offset": [0, 2],
+                "size": [18, 108]
+              }
+            },
+            {
+              "strength_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/strength_effect",
+                "size": [16, 16],
+                "offset": [0, -43],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "fire_resistance_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/fire_resistance_effect",
+                "size": [16, 16],
+                "offset": [0, -25],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "regeneration_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/regeneration_effect",
+                "size": [16, 16],
+                "offset": [0, -7],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "water_breathing_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/water_breathing_effect",
+                "size": [16, 16],
+                "offset": [0, 11],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "slow_falling_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/slow_falling_effect",
+                "size": [16, 16],
+                "offset": [0, 29],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "slowness_resistance": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/slowness_resistance",
+                "size": [16, 16],
+                "offset": [0, 47],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "display_slots_ingredients_grid_right": {
+    "type": "grid",
+    "size": [54, 128],
+    "offset": [22, -24],
+    "grid_dimensions": [3, 2],
+    "controls": [
+      {
+        "display_item_slot_wart_offset": {
+          "type": "panel",
+          "grid_position": [0, 0],
+          "controls": [
+            {
+              "display_item_slot_wart@display_slots": {}
+            },
+            {
+              "nether_wart": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/nether_wart",
+                "size": [16, 16],
+                "offset": [0, 0],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_effects_offset": {
+          "type": "panel",
+          "grid_position": [1, 0],
+          "controls": [
+            {
+              "display_item_slot_effects@display_slots": {}
+            },
+            {
+              "effects": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/effects",
+                "size": [16, 16],
+                "offset": [0, 0],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_curser_offset": {
+          "type": "panel",
+          "grid_position": [2, 0],
+          "controls": [
+            {
+              "display_item_slot_curser@display_slots": {}
+            },
+            {
+              "effects": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/spider_eye_fermented",
+                "size": [16, 16],
+                "offset": [0, 0],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_modifier_offset": {
+          "type": "panel",
+          "grid_position": [0, 1],
+          "controls": [
+            {
+              "display_item_slot_modifier@display_slots": {
+                "offset": [0, 2],
+                "size": [18, 108]
+              }
+            },
+            {
+              "sugar": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/sugar",
+                "size": [16, 16],
+                "offset": [0, -43],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "rabbit_foot": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/rabbit_foot",
+                "size": [16, 16],
+                "offset": [0, -25],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "spider_eye": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/spider_eye",
+                "size": [16, 16],
+                "offset": [0, -7],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "melon_speckled": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/melon_speckled",
+                "size": [16, 16],
+                "offset": [0, 11],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "carrot_golden": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/carrot_golden",
+                "size": [16, 16],
+                "offset": [0, 29],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "spider_eye_fermented": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/items/spider_eye_fermented",
+                "size": [16, 16],
+                "offset": [0, 47],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_potion_offset": {
+          "type": "panel",
+          "grid_position": [1, 1],
+          "controls": [
+            {
+              "display_item_slot_potion@display_slots": {
+                "offset": [0, 2],
+                "size": [18, 108]
+              }
+            },
+            {
+              "speed_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/speed_effect",
+                "size": [16, 16],
+                "offset": [0, -43],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "jump_boost_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/jump_boost_effect",
+                "size": [16, 16],
+                "offset": [0, -25],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "poison_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/poison_effect",
+                "size": [16, 16],
+                "offset": [0, -7],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "water_breathing_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/water_breathing_effect",
+                "size": [16, 16],
+                "offset": [0, 11],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "health_plus": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/health_plus",
+                "size": [16, 16],
+                "offset": [0, 29],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "weakness_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/weakness_effect",
+                "size": [16, 16],
+                "offset": [0, 47],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "display_item_slot_cursed_potion_offset": {
+          "type": "panel",
+          "grid_position": [2, 1],
+          "controls": [
+            {
+              "display_item_slot_cursed_potion@display_slots": {
+                "offset": [0, -7],
+                "size": [18, 90]
+              }
+            },
+            {
+              "slowness_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/slowness_effect",
+                "size": [16, 16],
+                "offset": [0, -43],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "slowness_effect_2": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/slowness_effect",
+                "size": [16, 16],
+                "offset": [0, -25],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "health_minus": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/health_minus",
+                "size": [16, 16],
+                "offset": [0, -7],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "health_minus_2": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/brewing_guide/health_minus",
+                "size": [16, 16],
+                "offset": [0, 11],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            },
+            {
+              "invisibility_effect": {
+                "type": "image",
+                "layer": 10,
+                "texture": "textures/ui/invisibility_effect",
+                "size": [16, 16],
+                "offset": [0, 29],
+                "anchor_from": "center",
+                "anchor_to": "center"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

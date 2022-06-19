@@ -1,0 +1,17 @@
+/*********************************************************
+ *        PolyFlore.net | All rights reserved            *
+ *         by @volyfnap | All rights reserved            *
+ *********************************************************/
+
+{
+  "format_version": 2,
+  "header": {"description": "A Depixel Bedrock §lmini add-on. §r§4Requires:§f Depixel §cBeta §r/ §aLite §r/ §bLite+",
+      		   "name": "Depixel: Better Grass",
+      		   "uuid": "12a2ad44-db19-11ea-87d0-0242ac130003",
+      		   "version": [1,1,0],
+      		   "min_engine_version": [1,14,0]},
+
+  "modules": [{"description": "A Depixel Bedrock §lmini add-on. §r§4Requires:§f Depixel §cBeta §r/ §aLite §r/ §bLite+",
+      		     "type": "resources",
+               "uuid": "12a2af42-db19-11ea-87d0-0242ac130003",
+               "version": [1,1,0]}]}

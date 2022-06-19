@@ -1,0 +1,17 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Bedrock Tweaks §aResource Packs§r by §5DrAv0011§r",
+        "name": "BTRP-704627",
+        "uuid": "f2635ad5-ad0b-401a-8fc1-d8c64d8e877f",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 16, 0]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "6628ff49-b31d-484d-bfc0-676b7d733022",
+            "version": [1, 0, 0]
+        }
+    ]
+}

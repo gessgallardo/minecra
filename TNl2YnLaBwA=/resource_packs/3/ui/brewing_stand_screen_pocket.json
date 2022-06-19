@@ -1,0 +1,41 @@
+{
+  "namespace": "brewing_stand_pocket",
+
+  "brewing_stand_panel": {
+    "type": "panel",
+    "controls": [
+      { "bg@brewing_stand_pocket.background_image": {} },
+      { "root_panel@common.root_panel": {} },
+      { "header@brewing_stand_pocket.header": { "layer": 2 } },
+      { "inventory@brewing_stand_pocket.inventory_half_screen": {} },
+      { "brewing_stand_half_screen@brewing_stand_pocket.brewing_stand_half_screen": { "layer": 2 } },
+      { "container_gamepad_helpers@common.container_gamepad_helpers": { "layer": 2 } },
+      { "inventory_selected_icon_button@common.inventory_selected_icon_button": {} },
+      { "hold_icon@common.inventory_take_progress_icon_button": {} },
+      { "selected_item_details_factory@common.selected_item_details_factory": {} },
+      { "flying_item_renderer@common.flying_item_renderer": { "layer": 10 } },
+      { 
+        "brewing_modifiers_panel@brewing_stand.brewing_modifiers_panel": {
+          "offset": ["2.85%", "-24.5%"]
+        } 
+      },
+      { 
+        "brewing_ingredients_panel@brewing_stand.brewing_ingredients_panel": {
+          "offset": ["8%", "22%"]
+        } 
+      }
+    ]
+  },
+
+  "brewing_stand_contents_panel": {
+    "type": "panel",
+    "offset": [ 0, "default-4px" ],
+    "controls": [
+      {
+        "slots_panel@slots_panel": {
+          "offset": [ 15, -10 ]
+        }
+      }
+    ]
+  }
+}

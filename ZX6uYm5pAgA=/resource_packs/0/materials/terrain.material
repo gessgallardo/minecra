@@ -1,0 +1,1 @@
+{"materials":{"version":"1.0.0","terrain_base":{"vertexShader":"shaders/spec.v","fragmentShader":"shaders/spec.f"}}}
